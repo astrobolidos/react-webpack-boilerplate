@@ -2,13 +2,20 @@
 // http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html
 
 var React = require('react/addons');
+var TextField = require('material-ui').TextField;
+
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 var BoilerplateApp = React.createClass({
   render: function () {
-    return (
+    return (<div>
       <h1>Hello world! yo!</h1>
-    );
+    	<TextField
+  hintText="Hint Text"
+  floatingLabelText="Floating Label Text" />	
+    </div>);
   }
 });
 
-React.render(<BoilerplateApp />, document.body);
+React.render(<BoilerplateApp />, document.body); 

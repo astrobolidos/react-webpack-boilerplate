@@ -4,7 +4,7 @@
   "description": "boilerplate",
   "main": "/src/jsx/index.js",
   "scripts": {
-    "start": "webpack . -d"
+    "start": "webpack . -d --watch"
   },
   "author": "astrobolidos",
   "license": "ISC",
@@ -15,7 +15,9 @@
     "webpack": "^1.9.4"
   },
   "dependencies": {
+    "material-ui": "^0.7.5",
     "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react-router": "^0.13.3",
+    "react-tap-event-plugin": "^0.1.6"
   }
 }
