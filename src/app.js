@@ -3,7 +3,7 @@
 
 var React = require('react/addons');
 window.React = React;
-// var TextField = require('material-ui').TextField;
+var TextField = require('material-ui').TextField;
 
 // var injectTapEventPlugin = require("react-tap-event-plugin");
 // // injectTapEventPlugin();
@@ -15,6 +15,7 @@ var BoilerplateApp = React.createClass({
     return (<div>
       <h1>Hello world! yo!</h1>
       welcome.
+      <TextField floatingLabelText="hi"/>
     </div>);
   }
 });
