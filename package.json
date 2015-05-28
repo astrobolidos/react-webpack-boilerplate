@@ -5,7 +5,7 @@
   "main": "/src/app.js",
   "scripts": {
     "start": "webpack . -d --watch",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base ."
   },
   "author": "astrobolidos",
   "license": "ISC",
