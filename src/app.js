@@ -14,7 +14,7 @@ var BoilerplateApp = React.createClass({
   render: function () {
     return (<div>
       <h1>Hello world! yo!</h1>
-
+      welcome.
     </div>);
   }
 });

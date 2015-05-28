@@ -5,7 +5,7 @@
   "main": "/src/app.js",
   "scripts": {
     "start": "webpack . -d --watch",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base ."
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base public"
   },
   "author": "astrobolidos",
   "license": "ISC",
@@ -13,7 +13,8 @@
     "jsx-loader": "^0.13.2",
     "node-libs-browser": "^0.5.0",
     "react-hot-loader": "^1.2.7",
-    "webpack": "^1.9.4"
+    "webpack": "^1.9.4",
+    "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
     "material-ui": "^0.7.5",
