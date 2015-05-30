@@ -4,8 +4,8 @@ var node_modules_dir = path.join(__dirname, 'node_modules');
 
 var config = {
   entry: {
-    app: path.resolve(__dirname, 'src/app.js'),
-    vendors: ['react/addons','react-router', 'material-ui']
+    main: path.resolve(__dirname, 'src/app.js'),
+    vendors: ['react/addons', 'react-router', 'material-ui']
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),
