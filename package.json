@@ -2,7 +2,7 @@
   "name": "react-webpack-boilerplate",
   "version": "0.0.1",
   "description": "boilerplate",
-  "main": "/src/app.js",
+  "main": "./src/app.js",
   "scripts": {
     "start": "webpack . -d --watch",
     "dev": "webpack-dev-server --devtool eval --progress --colors --content-base public"

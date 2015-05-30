@@ -1,32 +1,30 @@
- var webpack = require('webpack');
- var path = require('path');
- var node_modules_dir = path.join(__dirname, 'node_modules');
+var path = require('path');
+var webpack = require('webpack');
+var node_modules_dir = path.join(__dirname, 'node_modules');
 
 var config = {
-  addVendor: function (name, path) {
-    this.resolve.alias[name] = path;
-    this.module.noParse.push(path);
-  },  
-  entry: ['./src/app.js'],
+  entry: {
+    app: path.resolve(__dirname, 'src/app.js'),
+    vendors: ['react/addons','react-router', 'material-ui']
+  },
   output: {
-    path: './public',
-    filename: 'bundle.js',
-    publicPath: '/'
+    path: path.resolve(__dirname, 'public/js'),
+    filename: 'bundle.js'
   },
   resolve: {
     alias: {}
   },  
   module: {
     noParse: [],
-    loaders: [
-      { test: /\.js$/, loader: 'jsx-loader', exclude:[node_modules_dir] }
+    loaders: [{
+      test: /\.js$/, 
+      loader: 'jsx-loader', 
+      exclude:[node_modules_dir] }
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('app', null, false)
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
   ]  
 };
-
-config.addVendor('react', path.resolve(node_modules_dir, 'react/dist/react.min.js'));
 
 module.exports = config;
