@@ -20,7 +20,7 @@ webpackJsonp([0],[
 	
 	var React = __webpack_require__(/*! react/addons */ 3);  
 	var Router = __webpack_require__(/*! react-router */ 176);
-	var TextField = __webpack_require__(/*! material-ui */ 216).TextField;
+	var TextField = __webpack_require__(/*! material-ui */ 216).TextField;  
 	window.React = React;
 	 
 	var App = React.createClass({displayName: "App",

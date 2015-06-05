@@ -2,7 +2,7 @@ require('./scss/theme.scss')
 
 var React = require('react/addons');  
 var Router = require('react-router');
-var TextField = require('material-ui').TextField;
+var TextField = require('material-ui').TextField;  
 window.React = React;
  
 var App = React.createClass({
