@@ -1,3 +1,5 @@
+require('./scss/theme.scss')
+
 var React = require('react/addons');  
 var Router = require('react-router');
 var TextField = require('material-ui').TextField;
@@ -6,7 +8,7 @@ window.React = React;
 var App = React.createClass({
   render: function () { 
     return (
-      <div>
+      <div className="container">
         <header>
           <ul>
             <li><Link to="app">Dashboard</Link></li>
@@ -15,12 +17,12 @@ var App = React.createClass({
           </ul>
           Logged in as Lisandro
         </header>
-
+        <br/>
         <RouteHandler/>
       </div>
     );
   }
-});
+}); 
 
 // var injectTapEventPlugin = require("react-tap-event-plugin");
 // // injectTapEventPlugin();

@@ -1,0 +1,27 @@
+$color1: #cbe896;
+$color2: #aac0aa; 
+$color3: #fcdfa6;
+$color4: #a18276;
+$color5: #f4b886;
+
+body {
+	background: $color2;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: center;
+
+	header {
+		background: $color3;
+	}
+
+	ul {
+		list-style-type: none;
+		li {
+			display: inline;
+			width: '180px';
+		}
+	}
+}

@@ -5,8 +5,8 @@ webpackJsonp([0],[
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! C:\Users\Lisandro\Documents\projects\react-webpack-boilerplate\src\app.js */1);
-	module.exports = __webpack_require__(/*! C:\Users\Lisandro\Documents\projects\react-webpack-boilerplate */1);
+	__webpack_require__(/*! c:\Source\Sandbox\react-webpack-boilerplate\src\app.js */1);
+	module.exports = __webpack_require__(/*! c:\Source\Sandbox\react-webpack-boilerplate */1);
 
 
 /***/ },
@@ -16,15 +16,17 @@ webpackJsonp([0],[
   \********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(/*! react/addons */ 2);  
-	var Router = __webpack_require__(/*! react-router */ 175);
-	var TextField = __webpack_require__(/*! material-ui */ 215).TextField;
+	__webpack_require__(/*! ./scss/theme.scss */ 2)
+	
+	var React = __webpack_require__(/*! react/addons */ 3);  
+	var Router = __webpack_require__(/*! react-router */ 176);
+	var TextField = __webpack_require__(/*! material-ui */ 216).TextField;
 	window.React = React;
 	 
 	var App = React.createClass({displayName: "App",
 	  render: function () { 
 	    return (
-	      React.createElement("div", null, 
+	      React.createElement("div", {className: "container"}, 
 	        React.createElement("header", null, 
 	          React.createElement("ul", null, 
 	            React.createElement("li", null, React.createElement(Link, {to: "app"}, "Dashboard")), 
@@ -33,12 +35,12 @@ webpackJsonp([0],[
 	          ), 
 	          "Logged in as Lisandro"
 	        ), 
-	
+	        React.createElement("br", null), 
 	        React.createElement(RouteHandler, null)
 	      )
 	    );
 	  }
-	});
+	}); 
 	
 	// var injectTapEventPlugin = require("react-tap-event-plugin");
 	// // injectTapEventPlugin();
@@ -97,6 +99,15 @@ webpackJsonp([0],[
 	
 	
 
+
+/***/ },
+/* 2 */
+/*!*****************************!*\
+  !*** ./src/scss/theme.scss ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 ]);
