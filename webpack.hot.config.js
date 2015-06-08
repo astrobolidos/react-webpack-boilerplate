@@ -1,6 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 
+// TODO: Add support for vendors js
+
 module.exports = {
   devtool: 'eval',
   entry: [
