@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var config = {
   devtool: 'source-map',
   entry: {
-    main: ['webpack/hot/dev-server', path.resolve(__dirname, 'src/app.js')],
+    main: path.resolve(__dirname, 'src/app.js'),
     vendors: ['react/addons', 'react-router', 'material-ui']
   },
   output: {

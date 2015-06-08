@@ -21,9 +21,9 @@ webpackJsonp([0],[
 	var React = __webpack_require__(/*! react/addons */ 3);  
 	var Router = __webpack_require__(/*! react-router */ 176);
 	var TextField = __webpack_require__(/*! material-ui */ 216).TextField;  
-	window.React = React;
+	window.React = React; 
 	 
-	var App = React.createClass({displayName: "App",
+	var App = React.createClass({displayName: "App", 
 	  render: function () { 
 	    return (
 	      React.createElement("div", {className: "container"}, 
@@ -33,7 +33,7 @@ webpackJsonp([0],[
 	            React.createElement("li", null, React.createElement(Link, {to: "inbox"}, "Inbox")), 
 	            React.createElement("li", null, React.createElement(Link, {to: "calendar"}, "Calendar"))
 	          ), 
-	          "Logged in as Lisandro"
+	          "Logged in as Lisandro Pacheco"
 	        ), 
 	        React.createElement("br", null), 
 	        React.createElement(RouteHandler, null)
@@ -95,7 +95,9 @@ webpackJsonp([0],[
 	Router.run(routes, function (Handler) {
 	  React.render(React.createElement(Handler, null), document.body);
 	});
-	
+	// Router.run(routes, Router.HistoryLocation, function (Handler, state) {
+	//   React.render(<Handler routerState={state} environment="browser" />, document.body);
+	// });
 	
 	
 

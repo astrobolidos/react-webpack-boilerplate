@@ -3,9 +3,9 @@ require('./scss/theme.scss')
 var React = require('react/addons');  
 var Router = require('react-router');
 var TextField = require('material-ui').TextField;  
-window.React = React;
+window.React = React; 
  
-var App = React.createClass({
+var App = React.createClass({ 
   render: function () { 
     return (
       <div className="container">
@@ -77,6 +77,8 @@ var routes = (
 Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.body);
 });
-
+// Router.run(routes, Router.HistoryLocation, function (Handler, state) {
+//   React.render(<Handler routerState={state} environment="browser" />, document.body);
+// });
 
 

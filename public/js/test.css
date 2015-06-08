@@ -11,7 +11,7 @@ body {
     list-style-type: none; }
     .container ul li {
       display: inline;
-      width: '180px'; }
+      width-min: '180px'; }
 
 /*# sourceMappingURL=public/js/sass.map */
 /*# sourceMappingURL=test.css.map*/
