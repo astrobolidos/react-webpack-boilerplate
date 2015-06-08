@@ -25,6 +25,9 @@ module.exports = {
       test: /\.jsx?$/,
       loaders: ['react-hot', 'jsx-loader'],
       include: path.join(__dirname, 'src')
+    },{
+      test: /\.scss$/,
+      loader: "style!css!sass"
     }]
   }
 };
