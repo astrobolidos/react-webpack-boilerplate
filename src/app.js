@@ -1,4 +1,4 @@
-require('./scss/theme.scss')
+//require('./scss/theme.scss')
 
 var React = require('react/addons');  
 var Router = require('react-router');
