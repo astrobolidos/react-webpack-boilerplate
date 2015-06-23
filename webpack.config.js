@@ -7,7 +7,7 @@ var config = {
   devtool: 'source-map',
   entry: {
     main: path.resolve(__dirname, 'src/app.js'),
-    vendors: ['react/addons', 'react-router', 'material-ui']
+    //vendors: ['react/addons', 'react-router', 'material-ui']
   },
   output: {
     path: path.resolve(__dirname, 'public/js'),
@@ -31,8 +31,8 @@ var config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("test.css", { allChunks: true }), 
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+    new ExtractTextPlugin("app.css", { allChunks: true }), 
+    //new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
   ]  
 };
 
