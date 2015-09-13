@@ -5,8 +5,8 @@ webpackJsonp([0],[
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! C:\Users\Lisandro\Documents\projects\react-webpack-boilerplate\src\app.js */1);
-	module.exports = __webpack_require__(/*! C:\Users\Lisandro\Documents\projects\react-webpack-boilerplate */1);
+	__webpack_require__(/*! c:\Source\Sandbox\react-webpack-boilerplate\src\app.js */1);
+	module.exports = __webpack_require__(/*! c:\Source\Sandbox\react-webpack-boilerplate */1);
 
 
 /***/ },
@@ -16,6 +16,7 @@ webpackJsonp([0],[
   \********************/
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./app.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	
@@ -29,6 +30,15 @@ webpackJsonp([0],[
 	
 	}
 	
+=======
+	__webpack_require__(/*! ./scss/theme.scss */ 2)
+	
+	var React = __webpack_require__(/*! react/addons */ 3);  
+	var Router = __webpack_require__(/*! react-router */ 176);
+	var TextField = __webpack_require__(/*! material-ui */ 216).TextField;  
+	window.React = React; 
+	 
+>>>>>>> origin/master
 	var App = React.createClass({displayName: "App", 
 	  render: function () { 
 	    return (
@@ -39,14 +49,19 @@ webpackJsonp([0],[
 	            React.createElement("li", null, React.createElement(Link, {to: "inbox"}, "Inbox")), 
 	            React.createElement("li", null, React.createElement(Link, {to: "calendar"}, "Calendar"))
 	          ), 
-	          "Logged in as Lisandro"
+	          "Logged in as Lisandro Pacheco"
 	        ), 
+<<<<<<< HEAD
 	
 	        React.createElement(RouteHandler, {style: {clear:'both'}})
+=======
+	        React.createElement("br", null), 
+	        React.createElement(RouteHandler, null)
+>>>>>>> origin/master
 	      )
 	    );
 	  }
-	});
+	}); 
 	
 	// var injectTapEventPlugin = require("react-tap-event-plugin");
 	// // injectTapEventPlugin();
@@ -97,10 +112,21 @@ webpackJsonp([0],[
 	Router.run(routes, function (Handler) {
 	  React.render(React.createElement(Handler, null), document.body);
 	});
-	
+	// Router.run(routes, Router.HistoryLocation, function (Handler, state) {
+	//   React.render(<Handler routerState={state} environment="browser" />, document.body);
+	// });
 	
 	
 
+
+/***/ },
+/* 2 */
+/*!*****************************!*\
+  !*** ./src/scss/theme.scss ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 ]);
