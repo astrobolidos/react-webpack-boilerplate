@@ -16,17 +16,25 @@ webpackJsonp([0],[
   \********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(/*! react/addons */ 2);  
-	var Router = __webpack_require__(/*! react-router */ 175);
-	var TextField = __webpack_require__(/*! material-ui */ 215).TextField;
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./app.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	
+	var React = __webpack_require__(/*! react/addons */ 2);   
+	var Router = __webpack_require__(/*! react-router */ 175); 
+	var TextField = __webpack_require__(/*! material-ui */ 215).TextField; 
 	window.React = React;
 	 
-	var App = React.createClass({displayName: "App",
+	var appStyle = {
+	  div: { background: 'lightGray', height: 300, width: 300, textAlign: 'center' },
+	
+	}
+	
+	var App = React.createClass({displayName: "App", 
 	  render: function () { 
 	    return (
-	      React.createElement("div", null, 
+	      React.createElement("div", {className: "container"}, 
 	        React.createElement("header", null, 
-	          React.createElement("ul", null, 
+	          React.createElement("ul", {style: {listStyleType:'none'}}, 
 	            React.createElement("li", null, React.createElement(Link, {to: "app"}, "Dashboard")), 
 	            React.createElement("li", null, React.createElement(Link, {to: "inbox"}, "Inbox")), 
 	            React.createElement("li", null, React.createElement(Link, {to: "calendar"}, "Calendar"))
@@ -34,7 +42,7 @@ webpackJsonp([0],[
 	          "Logged in as Lisandro"
 	        ), 
 	
-	        React.createElement(RouteHandler, null)
+	        React.createElement(RouteHandler, {style: {clear:'both'}})
 	      )
 	    );
 	  }
@@ -49,10 +57,6 @@ webpackJsonp([0],[
 	var Link = Router.Link;
 	var Route = Router.Route;
 	var RouteHandler = Router.RouteHandler;
-	
-	var appStyle = {
-	  div: { background: 'lightGray', height: 300, width: 300, textAlign: 'center' }
-	}
 	
 	var Dashboard = React.createClass({displayName: "Dashboard",
 	  handleClick: function(e) {

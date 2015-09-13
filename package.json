@@ -4,21 +4,25 @@
   "description": "boilerplate",
   "main": "./src/app.js",
   "scripts": {
-    "start": "webpack . -d  --watch",
+    "start": "webpack . -d --display-error-details",
     "dev": "webpack-dev-server --devtool eval --progress --colors --content-base public"
   },
   "author": "astrobolidos",
   "license": "ISC",
   "devDependencies": {
+    "extract-text-webpack-plugin": "^0.8.1",
     "jsx-loader": "^0.13.2",
     "node-libs-browser": "^0.5.0",
+    "node-sass": "^3.1.2",
     "react-hot-loader": "^1.2.7",
+    "sass-loader": "^1.0.2",
     "webpack": "^1.9.4",
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
     "material-ui": "^0.7.5",
     "react": "^0.13.3",
+    "react-bootstrap": "^0.23.0",
     "react-router": "^0.13.3",
     "react-tap-event-plugin": "^0.1.6"
   }

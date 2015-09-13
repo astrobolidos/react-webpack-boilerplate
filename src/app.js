@@ -1,14 +1,22 @@
-var React = require('react/addons');  
-var Router = require('react-router');
-var TextField = require('material-ui').TextField;
+require("./app.scss");
+
+
+var React = require('react/addons');   
+var Router = require('react-router'); 
+var TextField = require('material-ui').TextField; 
 window.React = React;
  
-var App = React.createClass({
+var appStyle = {
+  div: { background: 'lightGray', height: 300, width: 300, textAlign: 'center' },
+
+}
+
+var App = React.createClass({ 
   render: function () { 
     return (
-      <div>
+      <div className="container">
         <header>
-          <ul>
+          <ul style={{listStyleType:'none'}}>
             <li><Link to="app">Dashboard</Link></li>
             <li><Link to="inbox">Inbox</Link></li>
             <li><Link to="calendar">Calendar</Link></li>
@@ -16,7 +24,7 @@ var App = React.createClass({
           Logged in as Lisandro
         </header>
 
-        <RouteHandler/>
+        <RouteHandler style={{clear:'both'}}/>
       </div>
     );
   }
@@ -31,10 +39,6 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
-
-var appStyle = {
-  div: { background: 'lightGray', height: 300, width: 300, textAlign: 'center' }
-}
 
 var Dashboard = React.createClass({
   handleClick: function(e) {

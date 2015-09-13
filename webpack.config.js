@@ -12,18 +12,24 @@ var config = {
     filename: 'bundle.js'
   },
   resolve: {
-    alias: {}
+    alias: {},
+     modulesDirectories: ["src", "node_modules"]
   },  
   module: {
     noParse: [],
     loaders: [{
       test: /\.js$/, 
       loader: 'jsx-loader', 
-      exclude:[node_modules_dir] }
-    ]
+      exclude:[node_modules_dir] 
+    },
+    {
+      test: /\.scss$/,
+      loader: "style-loader"
+    }]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+    
   ]  
 };
 
